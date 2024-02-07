@@ -16,4 +16,7 @@ public class PlayerInfo : ScriptableObject
     public int playerDefense;
     public int playerHealth;
     public int playerCritical;
+
+    [Header("Inventory")]
+    public WeaponInfo[] weapons;
 }

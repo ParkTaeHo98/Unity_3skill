@@ -17,4 +17,5 @@ public class WeaponInfo : ScriptableObject
     public WeaponType weaponType;
     public int weaponAd;
     public int weaponPrice;
+    public bool choice;
 }

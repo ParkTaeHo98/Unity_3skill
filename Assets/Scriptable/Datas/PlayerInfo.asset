@@ -17,8 +17,18 @@ MonoBehaviour:
   playerInfo: "\uCF54\uB4DC\uB97C \uC9DC\uB2E4\uAC00 \uACFC\uB85C\uC0AC\uB85C \uC774\uC138\uACC4
     \uC804\uC0DD\uC744 \uD574\uBC84\uB838\uB2E4 \uADF8\uB7F0\uB370 \uB098\uB294 \uB0A8\uC790\uC778\uB370
     \uC5EC\uC790\uB85C \uC804\uC0DD\uD588\uB2E4..."
-  playerGold: 10000
-  playerAttack: 15
+  playerGold: 9900
+  playerAttack: 25
   playerDefense: 10
   playerHealth: 200
   playerCritical: 25
+  weapons:
+  - {fileID: 11400000, guid: 2ef7e9b6e02f48f4eaa07b5738a33465, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

@@ -36,13 +36,28 @@ public class LobbyBuyController : MonoBehaviour
             Check check = Check.BuyIt;
             LobbyShopController.instance.OnShopPopUp(check);
             playerInfo.playerGold -= weaponInfo.weaponPrice;
-            Inventory.instance.AddItem(weaponInfo);
+            int chack = chackSlot();
+            if (chack != -1)
+            {
+                playerInfo.weapons[chack] = weaponInfo;
+            }
         }
         else
         {
             Check check = Check.lack;
             LobbyShopController.instance.OnShopPopUp(check);
         }
+    }
+    public int chackSlot()
+    {
+        for (int i = 0; i < playerInfo.weapons.Length; i++)
+        {
+            if (playerInfo.weapons[i] == null)
+            {
+                return i;
+            }
+        }
+        return -1;
     }
 }
 
